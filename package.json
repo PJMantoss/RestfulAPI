@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/PJMantoss/RestfulAPI/issues"
   },
-  "homepage": "https://github.com/PJMantoss/RestfulAPI#readme"
+  "homepage": "https://github.com/PJMantoss/RestfulAPI#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "nodemon": "^3.0.2"
+  }
 }
