@@ -1,0 +1,22 @@
+{
+  "name": "rest-api-mini-project",
+  "version": "1.0.0",
+  "description": "A Restful API built with NodeJS, Express and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PJMantoss/RestfulAPI.git"
+  },
+  "keywords": [
+    "RestAPI"
+  ],
+  "author": "PJ Mantoss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PJMantoss/RestfulAPI/issues"
+  },
+  "homepage": "https://github.com/PJMantoss/RestfulAPI#readme"
+}
