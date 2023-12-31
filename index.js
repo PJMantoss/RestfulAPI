@@ -9,9 +9,13 @@ mongoose.connect(mongoString);
 const database = mongoose.Connection;
 
 // Throw a message depending on whether DB connection is successful or fails
-database.on();
+database.on('error', (error) => {
+    console.log(error);
+});
 
-database.once();
+database.once('connected', () => {
+    console.log('Database Connected!')
+});
 
 const app = express();
 
