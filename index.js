@@ -8,6 +8,11 @@ const mongoString = process.env.DATABASE_URL;
 mongoose.connect(mongoString);
 const database = mongoose.Connection;
 
+// Throw a message depending on whether DB connection is successful or fails
+database.on();
+
+database.once();
+
 const app = express();
 
 app.use(express.json());
