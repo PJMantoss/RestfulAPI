@@ -6,6 +6,7 @@ const mongoString = process.env.DATABASE_URL;
 
 //Connect Databse to Server using Mongoose
 mongoose.connect(mongoString);
+const database = mongoose.Connection;
 
 const app = express();
 
