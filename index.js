@@ -4,6 +4,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const mongoString = process.env.DATABASE_URL;
 
+//Connect Databse to Server using Mongoose
+mongoose.connect(mongoString);
+
 const app = express();
 
 app.use(express.json());
