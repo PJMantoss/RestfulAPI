@@ -6,7 +6,7 @@ const mongoString = process.env.DATABASE_URL;
 
 //Connect Databse to Server using Mongoose
 mongoose.connect(mongoString);
-const database = mongoose.Connection;
+const database = mongoose.connection;
 
 // Throw a message depending on whether DB connection is successful or fails
 database.on('error', (error) => {
