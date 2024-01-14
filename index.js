@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const mongoString = process.env.DATABASE_URL;
+const routes = require('routes/routes');
 
 //Connect Databse to Server using Mongoose
 mongoose.connect(mongoString);
@@ -20,6 +21,9 @@ database.once('connected', () => {
 const app = express();
 
 app.use(express.json());
+
+//Use routes
+app.use('/api', routes);
 
 app.listen(3000, () => {
     console.log(`Server Started at Port ${3000}`)
