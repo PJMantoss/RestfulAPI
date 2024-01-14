@@ -19,5 +19,11 @@ router.get('/getOne/:id', (req, res) => {
 // UPDATE Method (by ID) - Updating Data
 router.patch('/update/:id', (req, res) => {
     res.send('Update by ID API');
-})
+});
+
+// DELETE Method (by ID) - Deleting Data
+router.delete('/delete/:id', (req, res) => {
+    res.send('Delete by ID API');
+});
+
 module.exports = router;
