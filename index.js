@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const mongoString = process.env.DATABASE_URL;
+//Routes for the Endpoints
 const routes = require('routes/routes');
 
 //Connect Databse to Server using Mongoose
