@@ -13,7 +13,7 @@ router.get('/getAll', (req, res) => {
 
 // GET Method (by ID) - Reading Data
 router.get('/getOne/:id', (req, res) => {
-    res.send('Get By ID API');
+    res.send(req.params.id);
 });
 
 // UPDATE Method (by ID) - Updating Data
