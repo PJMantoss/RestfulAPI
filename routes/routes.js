@@ -1,5 +1,7 @@
 const express = require('express');
 const router = express.Router();
+//Model
+const Model = require("./model/model");
 
 // POST Method - Creating data
 router.post('/post', (req, res) => {
@@ -25,5 +27,12 @@ router.patch('/update/:id', (req, res) => {
 router.delete('/delete/:id', (req, res) => {
     res.send('Delete by ID API');
 });
+
+router.post('/post', (req, res) => {
+    const data = new Model({
+        name: req.body.name,
+        age: req.body.age
+    });
+})
 
 module.exports = router;
