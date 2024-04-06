@@ -9,9 +9,9 @@ const Model = require("./model/model");
 })*/
 
 // GET Method - Reading Data
-router.get('/getAll', (req, res) => {
+/*router.get('/getAll', (req, res) => {
     res.send('Get All API');
-});
+});*/
 
 // GET Method (by ID) - Reading Data
 router.get('/getOne/:id', (req, res) => {
