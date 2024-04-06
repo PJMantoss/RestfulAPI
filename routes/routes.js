@@ -47,7 +47,7 @@ router.post('/post', async (req, res) => {
 // Get All data from the DB
 router.get('/getAll', async (req, res) => {
     try{
-        const data = Model.find();
+        const data = await Model.find();
         res.json(data);
     }
     catch(err){
