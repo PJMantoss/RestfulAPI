@@ -55,4 +55,15 @@ router.get('/getAll', async (req, res) => {
     }
 });
 
+//Get an item by its ID
+router.get('/getOne/:id', async (req, res) => {
+    try{
+        const data = await Model.findById(req.params.id);
+        res.json(data);
+    }
+    catch(err){
+        res.status().json({message: err.message});
+    }
+});
+
 module.exports = router;
