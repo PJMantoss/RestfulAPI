@@ -19,9 +19,9 @@ router.get('/getOne/:id', (req, res) => {
 });
 
 // UPDATE Method (by ID) - Updating Data
-router.patch('/update/:id', (req, res) => {
+/*router.patch('/update/:id', (req, res) => {
     res.send('Update by ID API');
-});
+});*/
 
 // DELETE Method (by ID) - Deleting Data
 router.delete('/delete/:id', (req, res) => {
@@ -62,7 +62,7 @@ router.get('/getOne/:id', async (req, res) => {
         res.json(data);
     }
     catch(err){
-        res.status().json({message: err.message});
+        res.status(500).json({message: err.message});
     }
 });
 
