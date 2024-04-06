@@ -14,9 +14,9 @@ const Model = require("./model/model");
 });*/
 
 // GET Method (by ID) - Reading Data
-router.get('/getOne/:id', (req, res) => {
+/*router.get('/getOne/:id', (req, res) => {
     res.send(req.params.id);
-});
+});*/
 
 // UPDATE Method (by ID) - Updating Data
 /*router.patch('/update/:id', (req, res) => {
