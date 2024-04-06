@@ -86,12 +86,13 @@ router.patch('/update/:id', async (req, res) => {
 // Delete item by ID
 router.delete('/delete/:id', async (req, res) => {
     try{
-        //
+        const id = req.params.id;
+        const data = await Model.findByIdAndDelete(id);
+        res.send(`Document with ${data.name} has been deleted...`);
     }
     catch(err){
         res.status().json({message: err.message});
     }
-    res.send('Delete by ID API');
 });
 
 module.exports = router;
