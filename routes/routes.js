@@ -24,9 +24,9 @@ const Model = require("./model/model");
 });*/
 
 // DELETE Method (by ID) - Deleting Data
-router.delete('/delete/:id', (req, res) => {
+/*router.delete('/delete/:id', (req, res) => {
     res.send('Delete by ID API');
-});
+});*/
 
 //Post data to the database
 router.post('/post', async (req, res) => {
@@ -81,6 +81,17 @@ router.patch('/update/:id', async (req, res) => {
     catch(err){
         res.status(400).json({message: err.message});
     }
+});
+
+// Delete item by ID
+router.delete('/delete/:id', async (req, res) => {
+    try{
+        //
+    }
+    catch(err){
+        res.status().json({message: err.message});
+    }
+    res.send('Delete by ID API');
 });
 
 module.exports = router;
