@@ -4,9 +4,9 @@ const router = express.Router();
 const Model = require("./model/model");
 
 // POST Method - Creating data
-router.post('/post', (req, res) => {
+/*router.post('/post', (req, res) => {
     res.send('Post API');
-})
+})*/
 
 // GET Method - Reading Data
 router.get('/getAll', (req, res) => {
