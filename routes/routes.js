@@ -39,7 +39,7 @@ router.post('/post', (req, res) => {
         res.status(200).json(dataToSave);
     }
     catch(err){
-        //
+        res.status(400).json({message: err.message});
     }
 })
 
