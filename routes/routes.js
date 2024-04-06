@@ -27,6 +27,7 @@ router.patch('/update/:id', (req, res) => {
 router.delete('/delete/:id', (req, res) => {
     res.send('Delete by ID API');
 });
+
 //Post data to the database
 router.post('/post', async (req, res) => {
     const data = new Model({
@@ -41,6 +42,16 @@ router.post('/post', async (req, res) => {
     catch(err){
         res.status(400).json({message: err.message});
     }
-})
+});
+
+// Get All data from the DB
+router.get('/getAll', async (req, res) => {
+    try{
+        res.send('Get All API');
+    }
+    catch(err){
+        //
+    }
+});
 
 module.exports = router;
