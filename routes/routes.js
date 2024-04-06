@@ -27,7 +27,7 @@ router.patch('/update/:id', (req, res) => {
 router.delete('/delete/:id', (req, res) => {
     res.send('Delete by ID API');
 });
-
+//Post data to the database
 router.post('/post', (req, res) => {
     const data = new Model({
         name: req.body.name,
