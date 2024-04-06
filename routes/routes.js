@@ -33,6 +33,13 @@ router.post('/post', (req, res) => {
         name: req.body.name,
         age: req.body.age
     });
+
+    try{
+        const dataToSave = data.save();
+    }
+    catch(err){
+        //
+    }
 })
 
 module.exports = router;
