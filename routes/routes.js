@@ -66,4 +66,14 @@ router.get('/getOne/:id', async (req, res) => {
     }
 });
 
+//Update item by ID
+router.patch('/update/:id', (req, res) => {
+    try{
+        res.json();
+    }
+    catch(err){
+        res.status(400).json({message: err.message});
+    }
+});
+
 module.exports = router;
